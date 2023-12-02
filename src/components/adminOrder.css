@@ -1,0 +1,67 @@
+/* Add this CSS to your stylesheet or style component */
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rgb(130, 17, 0);
+    color: white;
+  }
+  
+  /* Status-specific background colors */
+  button[data-status="PENDING"] {
+    background-color: rgb(255, 74, 74);
+    color: white;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 40px;
+  }
+  
+  button[data-status="PROCESSING"] {
+    background-color: #007bff;
+    color: #fff;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 40px;
+  }
+  
+  button[data-status="SHIPPING"] {
+    background-color: #ffc107; /* Green for Shipped */
+    color: #fff;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 40px;
+  }
+  
+  button[data-status="DELIVERED"] {
+    background-color: #28a745; /* Green for Delivered */
+    color: #fff;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 40px;
+  }
+  
+  /* Action button styles */
+  /* select, button {
+    margin-top: 5px;
+    padding: 5px;
+  } */
+  
+  button {
+    cursor: pointer;
+  }
+  

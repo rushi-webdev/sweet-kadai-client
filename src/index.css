@@ -1,13 +1,148 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden !important;
+}
+.custom-prev {
+  z-index: 9999 !important;
+  width: 100px;
+  height: 100px;
+  border: 1px solid yellowgreen;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-prev {
+  left: 10px;
+  z-index: 1 !important;
+}
+
+.custom-next {
+  right: 10px !important;
+}
+
+.custom-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Custom styles for the Slick Carousel arrows */
+.slick-prev,
+.slick-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 199, 68, 0.7) !important;
+  height: 70px;
+  width: 30px;
+}
+
+.slick-prev {
+  left: 0px !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 0px !important;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgb(255, 199, 68) !important;
+}
+.slick-prev::before {
+  content: "❮";
+}
+.slick-next:before {
+  content: "❯";
+}
+
+/* HOME START */
+.slider-title > h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg id='b7d34d9f-fbd6-4988-a54b-ab92ea02fa7e' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 15'%3E%3Ctitle%3Eborder-2%3C/title%3E%3Cpath d='M-.5,2.5c7.7,0,7.7,8,15.39,8s7.7-8,15.4-8,7.7,8,15.4,8,7.71-8,15.41-8,7.7,8,15.4,8' fill='none' stroke='%23B2AB86' stroke-miterlimit='10'/%3E%3Ccircle cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='15' cy='5.55' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='46' cy='5.55' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='60' cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='30' cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3C/svg%3E");
+  z-index: -10;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.slider-title > h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg id='b7d34d9f-fbd6-4988-a54b-ab92ea02fa7e' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 15'%3E%3Ctitle%3Eborder-2%3C/title%3E%3Cpath d='M-.5,2.5c7.7,0,7.7,8,15.39,8s7.7-8,15.4-8,7.7,8,15.4,8,7.71-8,15.41-8,7.7,8,15.4,8' fill='none' stroke='%23B2AB86' stroke-miterlimit='10'/%3E%3Ccircle cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='15' cy='5.55' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='46' cy='5.55' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='60' cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3Ccircle cx='30' cy='7.25' r='1.75' fill='%23B2AB86'/%3E%3C/svg%3E");
+  z-index: -10;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+/* HOME END */
+
+/* LOGIN START */
+.login-main-container {
+  background-color: rgb(255, 252, 230);
+}
+.login-inner-container {
+  background-color: rgb(255, 252, 248);
+}
+.login-border {
+  border-bottom: 1px solid red;
+  height: 40px;
+}
+.login-email,
+.login-password {
+  height: 30px;
+}
+.login-email-input,
+.login-password-input {
+  width: 60%;
+  height: 30px;
+  border-radius: 0px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 0.5rem;
+}
+.sign-in-btn {
+  height: 40px;
+  border: none;
+  background-color: rgb(251, 100, 27);
+}
+.sign-in-btn:hover {
+  background-color: rgba(251, 100, 27, 0.9);
+}
+/* LOGIN END */
+.select-images {
+  color: #878787;
+}
+.select-images::-webkit-file-upload-button {
+  background: #ed1c1b;
+  border: 2px solid #ed1c1b;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  
 }

@@ -1,0 +1,36 @@
+/* NAVBAR START */
+@media (max-width:1000px) {
+    .mid-nav>div{
+        min-width: 80%;
+    }
+    .logo-container{
+        flex:1.5 !important;
+    }
+    .search-input-container{
+        width: 100%;
+        flex:2;
+    }
+    .search-input{
+        height: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .mid-nav>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-container{
+        flex: 0 !important;
+    }
+    .cart-container{
+        flex: 0 !important;
+    }
+    .search-input-container{
+        width: 100%;
+    }
+    .menu-button{
+        background-color: transparent;
+    }
+}
+/* NAVBAR END */

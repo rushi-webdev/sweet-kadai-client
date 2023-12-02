@@ -1,0 +1,12 @@
+@media (max-width:768px) {
+    .address-container{
+        max-width: 500px;
+    }
+}
+@media (max-width:500px) {
+    .address-container{
+        min-width: 95% !important;
+        max-width: 100%;
+    }
+}
+
